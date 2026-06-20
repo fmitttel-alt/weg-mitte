@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+@font-face {
+  font-family: 'EdoSZ';
+  src: url('/fonts/edo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .font-surly {
+    font-family: 'EdoSZ', sans-serif;
+  }
+  .font-backen-heading {
+    /* Du Pain et des Idées Stil: Playfair Display mit weitem Zeichenabstand */
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.15em;
+  }
+}

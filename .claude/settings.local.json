@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"C:\\\\Program Files\\\\nodejs\" -ErrorAction SilentlyContinue | Select-Object Name; Get-ChildItem \"$env:APPDATA\\\\npm\" -ErrorAction SilentlyContinue | Select-Object -First 5 Name)",
+      "PowerShell(Get-ChildItem -Recurse -Path \"C:\\\\Users\\\\fmitt\\\\OneDrive\\\\Weg-Vertrauen-Reiseordner\\\\Claude\\\\Website Weg-Mitte\" -Exclude \"node_modules\" | Where-Object {!$_.PSIsContainer} | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Users\\\\fmitt\\\\OneDrive\\\\Weg-Vertrauen-Reiseordner\\\\Claude\\\\Website Weg-Mitte\\\\\", \"\"\\) } | Sort-Object)",
+      "WebSearch"
+    ]
+  }
+}
